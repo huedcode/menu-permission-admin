@@ -1,0 +1,79 @@
+// global transition css
+
+/* fade */
+//.fade-enter-active,
+//.fade-leave-active {
+//  transition: opacity 0.28s;
+//}
+
+//.fade-enter,
+//.fade-leave-active {
+//  opacity: 0;
+//}
+
+/* fade-transform */
+
+.fade-enter-active {
+  transition: all 0.28s;
+
+}
+.fade-leave-active{
+  transition: all 0.28s;
+}
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-300px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(300px);
+}
+
+/* breadcrumb transition */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
+
+.move-enter-active,
+.move-leave-active {
+  transition: opacity 5s !important;
+}
+
+.move-enter,
+.move-leave {
+  opacity: 0;
+}
+@keyframes opacity2{
+  0%{opacity:0;}
+  20%{opacity:.2;}
+  50%{opacity:.5;}
+  100%{opacity:1;}
+}
+@-webkit-keyframes opacity2{
+  0%{opacity:0;}
+  20%{opacity:.2;}
+  50%{opacity:.5;}
+  100%{opacity:1;}
+}
+@-moz-keyframes opacity2{
+  0%{opacity:0;}
+  20%{opacity:.2;}
+  50%{opacity:.5;}
+  100%{opacity:1;}
+}
